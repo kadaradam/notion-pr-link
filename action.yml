@@ -1,11 +1,11 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'notion-pr-link'
+description: 'Update Notion task with GitHub PR'
+author: 'kadaradam'
 inputs:
-  milliseconds: # change this
+  pr_body:
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    description: 'The body of your pull request'
+    default: '.'
 runs:
   using: 'node16'
   main: 'dist/index.js'
