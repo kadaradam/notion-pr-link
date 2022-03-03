@@ -2,6 +2,10 @@ name: 'notion-pr-link'
 description: 'Update Notion task with GitHub PR'
 author: 'kadaradam'
 inputs:
+  notion_secret:
+    required: true
+    description: 'The secret for Notion API'
+    default: '.'
   pr_body:
     required: true
     description: 'The body of your pull request'
