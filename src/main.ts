@@ -49,7 +49,9 @@ async function run(): Promise<void> {
       notion.pages.update({
         page_id: pageId,
         properties: {
-          [notionPropToUpdate]: githubPrUrl
+          [notionPropToUpdate]: {
+            url: githubPrUrl
+          }
         }
       })
     );
