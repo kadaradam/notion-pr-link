@@ -21,4 +21,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./
         with:
-          milliseconds: 1000
+          notion_secret: 'test'
+          pr_body: 'Lorem ipsum dolor sit https://www.google.com/search?q=how+to+code&oq=how+to+code&aqs=chrome.0.69i59j69i60l3.976j0j9&sourceid=chrome&ie=UTF-8 amet, consectetur adipiscing elit. Pellentesque https://www.notion.so/myorg/b6b15af1bd0124809e94bdb5c7578464?v=51bd3ab7cc564d2683c1df618e9b77c1&p=70edd01db18a4ddcb5c1350991716484 pharetra nisl orci, ac pellentesque ipsum accumsan varius. Quisque semper ante sit amet neque congue, vitae venenatis nunc posuere. Vestibulum vehicula neque ut https://www.notion.so/myorg/70edd01db18a4ddcb5c1350991716484 pretium pulvinar. Nulla venenatis tristique lectus. Sed nec nibh dictum quam tristique finibus. Nullam ultricies ante ac lorem elementum, vitae volutpat ipsum mollis. Vestibulum egestas lectus nisl, ac posuere urna dignissim quis. In hac habitasse platea dictumst. Quisque mollis tincidunt urna et luctus. https://www.youtube.com/watch?v=AaY4vpFFfwg'
