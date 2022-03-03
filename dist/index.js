@@ -51,14 +51,18 @@ const client_1 = __nccwpck_require__(324);
 const utils_1 = __nccwpck_require__(918);
 const github_1 = __importDefault(__nccwpck_require__(5438));
 function run() {
-    var _a;
+    var _a, _b, _c, _d, _e;
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const githubPrBody = core.getInput('pr_body');
             const notionPropToUpdate = 'PR';
             const notionSecret = core.getInput('notion_secret');
-            const githubPrUrl = '';
-            core.debug(`Github event payload: ${JSON.stringify((_a = github_1.default.context) === null || _a === void 0 ? void 0 : _a.payload)}`);
+            const githubPrUrl = (_c = (_b = (_a = github_1.default === null || github_1.default === void 0 ? void 0 : github_1.default.context) === null || _a === void 0 ? void 0 : _a.payload) === null || _b === void 0 ? void 0 : _b.pull_request) === null || _c === void 0 ? void 0 : _c.html_url;
+            if (!githubPrUrl) {
+                core.info('Unable to resolve GitHub Pull Request payload.');
+                return;
+            }
+            core.debug(`Github event payload: ${JSON.stringify((_e = (_d = github_1.default === null || github_1.default === void 0 ? void 0 : github_1.default.context) === null || _d === void 0 ? void 0 : _d.payload) === null || _e === void 0 ? void 0 : _e.pull_request)}`);
             const extractedPageIds = (0, utils_1.getNotionIdsFromText)(githubPrBody);
             if (!(extractedPageIds === null || extractedPageIds === void 0 ? void 0 : extractedPageIds.length)) {
                 core.info('No Notion tasks were found in your GitHub Pull Request.');
