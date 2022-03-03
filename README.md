@@ -4,12 +4,13 @@
 
 # Update your Notion task with GitHub PR url
 
+Paste your notion task url to your GitHub Pull Request body, and this action will automatically update your Notion task's property with the PR url.
 ## Inputs
 
-| input            | description                  | required | default |
-| ---------------- | ---------------------------- | -------- | ------- |
-| `notion_secret`  | Notion Secret API Key        | `true`   | `none`    |
-| `notion_prop`    | Identifier for a Notion page | `true`   | `PR`      |
+| input            | description                    | required | default |
+| ---------------- | ------------------------------ | -------- | ------- |
+| `notion_secret`  | Notion Secret API Key          | `true`   | `none`  |
+| `notion_prop`    | Notion page property to update | `true`   | `PR`    |
 
 ## Usage
 
