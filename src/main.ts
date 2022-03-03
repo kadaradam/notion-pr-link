@@ -5,11 +5,11 @@ import { getNotionIdsFromText } from './utils';
 
 async function run(): Promise<void> {
   try {
-    const notionPropToUpdate = core.getInput('notion_prop');
+    const notionPropToUpdate: string = core.getInput('notion_prop');
     const notionSecret: string = core.getInput('notion_secret');
     const githubPrPayload = github?.context?.payload?.pull_request;
 
-    core.info(`Github event payload: ${JSON.stringify(github?.context)}`);
+    core.debug(`Github event payload: ${JSON.stringify(github?.context)}`);
 
     if (!githubPrPayload) {
       core.info('Unable to resolve GitHub Pull Request payload.');
