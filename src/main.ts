@@ -8,10 +8,17 @@ async function run(): Promise<void> {
     const githubPrBody: string = core.getInput('pr_body');
     const notionPropToUpdate = 'PR';
     const notionSecret: string = core.getInput('notion_secret');
-    const githubPrUrl = '';
+    const githubPrUrl = github?.context?.payload?.pull_request?.html_url;
+
+    if (!githubPrUrl) {
+      core.info('Unable to resolve GitHub Pull Request payload.');
+      return;
+    }
 
     core.debug(
-      `Github event payload: ${JSON.stringify(github.context?.payload)}`
+      `Github event payload: ${JSON.stringify(
+        github?.context?.payload?.pull_request
+      )}`
     );
 
     const extractedPageIds = getNotionIdsFromText(githubPrBody);
