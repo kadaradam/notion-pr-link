@@ -1,7 +1,7 @@
 import * as core from '@actions/core';
+import * as github from '@actions/github';
 import { Client } from '@notionhq/client';
 import { getNotionIdsFromText } from './utils';
-import github from '@actions/github';
 
 async function run(): Promise<void> {
   try {
