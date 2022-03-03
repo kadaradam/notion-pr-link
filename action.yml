@@ -7,9 +7,9 @@ inputs:
     description: 'The secret for Notion API'
     default: '.'
   pr_body:
-    required: true
-    description: 'The body of your pull request'
-    default: '.'
+    required: false
+    description: 'Notion property to update with GitHub PR value'
+    default: 'PR'
 runs:
   using: 'node16'
   main: 'dist/index.js'

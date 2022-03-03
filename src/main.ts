@@ -5,15 +5,26 @@ import github from '@actions/github';
 
 async function run(): Promise<void> {
   try {
-    const githubPrBody: string = core.getInput('pr_body');
-    const notionPropToUpdate = 'PR';
+    const notionPropToUpdate = core.getInput('notion_prop');
     const notionSecret: string = core.getInput('notion_secret');
-    const githubPrUrl = github?.context?.payload?.pull_request?.html_url;
+    const githubPrPayload = github?.context?.payload?.pull_request;
 
     core.debug(`Github event payload: ${JSON.stringify(github?.context)}`);
 
-    if (!githubPrUrl) {
+    if (!githubPrPayload) {
       core.info('Unable to resolve GitHub Pull Request payload.');
+      return;
+    }
+
+    const { body: githubPrBody, html_url: githubPrUrl } = githubPrPayload;
+
+    if (!githubPrBody) {
+      core.info('Unable to get GitHub Pull Request body.');
+      return;
+    }
+
+    if (!githubPrUrl) {
+      core.info('Unable to get GitHub Pull Request URL.');
       return;
     }
 
