@@ -5,7 +5,7 @@ import { getNotionIdsFromText } from './utils';
 
 async function run(): Promise<void> {
   try {
-    const notionPropToUpdate = core.getInput('notion_prop');
+    const notionPropToUpdate: string = core.getInput('notion_prop');
     const notionSecret: string = core.getInput('notion_secret');
     const githubPrPayload = github?.context?.payload?.pull_request;
 
