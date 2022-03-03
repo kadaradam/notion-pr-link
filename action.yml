@@ -13,3 +13,6 @@ inputs:
 runs:
   using: 'node16'
   main: 'dist/index.js'
+branding:
+  icon: 'link'  
+  color: 'red'
