@@ -15,9 +15,10 @@ Paste your notion task url to your GitHub Pull Request body, and this action wil
 
 ## Configure
 
-1. [Generate Notion secret](https://developers.notion.com/docs/getting-started) (See step 1.)
-2. Navigate to your Notion board, click on your task and add a new URL property. (Example property name: `PR`) <p><img src="./assets/notion_prop_setup.png?raw=true" alt="Notion Add a property" title="Notion Add a property" width="500" /></p>
-3. Add these 2 values to the GitHub action
+1. [Generate Notion secret](https://developers.notion.com/docs/getting-started#step-1-create-an-integration)
+2. [Share your Notion Database (or Page) with the integration](https://developers.notion.com/docs/getting-started#step-2-share-a-database-with-your-integration)
+3. Navigate to your Notion board, click on your task and add a new URL property. (Example property name: `PR`) <p><img src="./assets/notion_prop_setup.png?raw=true" alt="Notion Add a property" title="Notion Add a property" width="500" /></p>
+4. Add these 2 values to this GitHub action
 
 ## Usage
 
@@ -33,6 +34,6 @@ jobs:
       - name: Update notion page
         uses: kadaradam/notion-pr-link@latest
         with:
-          notion_secret: 'secret_1234567890abcdef1234'
-          notion_prop: 'PR'
+          notion_secret: secret_1234567890abcdef1234
+          notion_prop: PR
 ```
