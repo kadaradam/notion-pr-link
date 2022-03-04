@@ -12,19 +12,19 @@ async function run(): Promise<void> {
     core.debug(`Github event payload: ${JSON.stringify(github?.context)}`);
 
     if (!githubPrPayload) {
-      core.info('Unable to resolve GitHub Pull Request payload.');
+      core.setFailed('Unable to resolve GitHub Pull Request payload.');
       return;
     }
 
     const { body: githubPrBody, html_url: githubPrUrl } = githubPrPayload;
 
     if (!githubPrBody) {
-      core.info('Unable to get GitHub Pull Request body.');
+      core.setFailed('Unable to get GitHub Pull Request body.');
       return;
     }
 
     if (!githubPrUrl) {
-      core.info('Unable to get GitHub Pull Request URL.');
+      core.setFailed('Unable to get GitHub Pull Request URL.');
       return;
     }
 
