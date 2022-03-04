@@ -56,16 +56,16 @@ function run() {
             const githubPrPayload = (_b = (_a = github === null || github === void 0 ? void 0 : github.context) === null || _a === void 0 ? void 0 : _a.payload) === null || _b === void 0 ? void 0 : _b.pull_request;
             core.debug(`Github event payload: ${JSON.stringify(github === null || github === void 0 ? void 0 : github.context)}`);
             if (!githubPrPayload) {
-                core.info('Unable to resolve GitHub Pull Request payload.');
+                core.setFailed('Unable to resolve GitHub Pull Request payload.');
                 return;
             }
             const { body: githubPrBody, html_url: githubPrUrl } = githubPrPayload;
             if (!githubPrBody) {
-                core.info('Unable to get GitHub Pull Request body.');
+                core.setFailed('Unable to get GitHub Pull Request body.');
                 return;
             }
             if (!githubPrUrl) {
-                core.info('Unable to get GitHub Pull Request URL.');
+                core.setFailed('Unable to get GitHub Pull Request URL.');
                 return;
             }
             const extractedPageIds = (0, utils_1.getNotionIdsFromText)(githubPrBody);
