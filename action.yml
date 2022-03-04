@@ -8,7 +8,7 @@ inputs:
     default: '.'
   notion_prop:
     required: false
-    description: 'Notion property to update with GitHub PR value'
+    description: 'The Notion page property to update'
     default: 'PR'
 runs:
   using: 'node16'
