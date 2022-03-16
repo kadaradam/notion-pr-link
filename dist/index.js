@@ -1655,8 +1655,8 @@ class Client {
                 return this.request({
                     path: api_endpoints_1.getBlock.path(args),
                     method: api_endpoints_1.getBlock.method,
-                    query: (0, helpers_1.pick)(args, api_endpoints_1.getBlock.queryParams),
-                    body: (0, helpers_1.pick)(args, api_endpoints_1.getBlock.bodyParams),
+                    query: helpers_1.pick(args, api_endpoints_1.getBlock.queryParams),
+                    body: helpers_1.pick(args, api_endpoints_1.getBlock.bodyParams),
                     auth: args === null || args === void 0 ? void 0 : args.auth,
                 });
             },
@@ -1667,8 +1667,8 @@ class Client {
                 return this.request({
                     path: api_endpoints_1.updateBlock.path(args),
                     method: api_endpoints_1.updateBlock.method,
-                    query: (0, helpers_1.pick)(args, api_endpoints_1.updateBlock.queryParams),
-                    body: (0, helpers_1.pick)(args, api_endpoints_1.updateBlock.bodyParams),
+                    query: helpers_1.pick(args, api_endpoints_1.updateBlock.queryParams),
+                    body: helpers_1.pick(args, api_endpoints_1.updateBlock.bodyParams),
                     auth: args === null || args === void 0 ? void 0 : args.auth,
                 });
             },
@@ -1679,8 +1679,8 @@ class Client {
                 return this.request({
                     path: api_endpoints_1.deleteBlock.path(args),
                     method: api_endpoints_1.deleteBlock.method,
-                    query: (0, helpers_1.pick)(args, api_endpoints_1.deleteBlock.queryParams),
-                    body: (0, helpers_1.pick)(args, api_endpoints_1.deleteBlock.bodyParams),
+                    query: helpers_1.pick(args, api_endpoints_1.deleteBlock.queryParams),
+                    body: helpers_1.pick(args, api_endpoints_1.deleteBlock.bodyParams),
                     auth: args === null || args === void 0 ? void 0 : args.auth,
                 });
             },
@@ -1692,8 +1692,8 @@ class Client {
                     return this.request({
                         path: api_endpoints_1.appendBlockChildren.path(args),
                         method: api_endpoints_1.appendBlockChildren.method,
-                        query: (0, helpers_1.pick)(args, api_endpoints_1.appendBlockChildren.queryParams),
-                        body: (0, helpers_1.pick)(args, api_endpoints_1.appendBlockChildren.bodyParams),
+                        query: helpers_1.pick(args, api_endpoints_1.appendBlockChildren.queryParams),
+                        body: helpers_1.pick(args, api_endpoints_1.appendBlockChildren.bodyParams),
                         auth: args === null || args === void 0 ? void 0 : args.auth,
                     });
                 },
@@ -1704,8 +1704,8 @@ class Client {
                     return this.request({
                         path: api_endpoints_1.listBlockChildren.path(args),
                         method: api_endpoints_1.listBlockChildren.method,
-                        query: (0, helpers_1.pick)(args, api_endpoints_1.listBlockChildren.queryParams),
-                        body: (0, helpers_1.pick)(args, api_endpoints_1.listBlockChildren.bodyParams),
+                        query: helpers_1.pick(args, api_endpoints_1.listBlockChildren.queryParams),
+                        body: helpers_1.pick(args, api_endpoints_1.listBlockChildren.bodyParams),
                         auth: args === null || args === void 0 ? void 0 : args.auth,
                     });
                 },
@@ -1721,8 +1721,8 @@ class Client {
                 return this.request({
                     path: api_endpoints_1.listDatabases.path(),
                     method: api_endpoints_1.listDatabases.method,
-                    query: (0, helpers_1.pick)(args, api_endpoints_1.listDatabases.queryParams),
-                    body: (0, helpers_1.pick)(args, api_endpoints_1.listDatabases.bodyParams),
+                    query: helpers_1.pick(args, api_endpoints_1.listDatabases.queryParams),
+                    body: helpers_1.pick(args, api_endpoints_1.listDatabases.bodyParams),
                     auth: args === null || args === void 0 ? void 0 : args.auth,
                 });
             },
@@ -1733,8 +1733,8 @@ class Client {
                 return this.request({
                     path: api_endpoints_1.getDatabase.path(args),
                     method: api_endpoints_1.getDatabase.method,
-                    query: (0, helpers_1.pick)(args, api_endpoints_1.getDatabase.queryParams),
-                    body: (0, helpers_1.pick)(args, api_endpoints_1.getDatabase.bodyParams),
+                    query: helpers_1.pick(args, api_endpoints_1.getDatabase.queryParams),
+                    body: helpers_1.pick(args, api_endpoints_1.getDatabase.bodyParams),
                     auth: args === null || args === void 0 ? void 0 : args.auth,
                 });
             },
@@ -1745,8 +1745,8 @@ class Client {
                 return this.request({
                     path: api_endpoints_1.queryDatabase.path(args),
                     method: api_endpoints_1.queryDatabase.method,
-                    query: (0, helpers_1.pick)(args, api_endpoints_1.queryDatabase.queryParams),
-                    body: (0, helpers_1.pick)(args, api_endpoints_1.queryDatabase.bodyParams),
+                    query: helpers_1.pick(args, api_endpoints_1.queryDatabase.queryParams),
+                    body: helpers_1.pick(args, api_endpoints_1.queryDatabase.bodyParams),
                     auth: args === null || args === void 0 ? void 0 : args.auth,
                 });
             },
@@ -1757,8 +1757,8 @@ class Client {
                 return this.request({
                     path: api_endpoints_1.createDatabase.path(),
                     method: api_endpoints_1.createDatabase.method,
-                    query: (0, helpers_1.pick)(args, api_endpoints_1.createDatabase.queryParams),
-                    body: (0, helpers_1.pick)(args, api_endpoints_1.createDatabase.bodyParams),
+                    query: helpers_1.pick(args, api_endpoints_1.createDatabase.queryParams),
+                    body: helpers_1.pick(args, api_endpoints_1.createDatabase.bodyParams),
                     auth: args === null || args === void 0 ? void 0 : args.auth,
                 });
             },
@@ -1769,8 +1769,8 @@ class Client {
                 return this.request({
                     path: api_endpoints_1.updateDatabase.path(args),
                     method: api_endpoints_1.updateDatabase.method,
-                    query: (0, helpers_1.pick)(args, api_endpoints_1.updateDatabase.queryParams),
-                    body: (0, helpers_1.pick)(args, api_endpoints_1.updateDatabase.bodyParams),
+                    query: helpers_1.pick(args, api_endpoints_1.updateDatabase.queryParams),
+                    body: helpers_1.pick(args, api_endpoints_1.updateDatabase.bodyParams),
                     auth: args === null || args === void 0 ? void 0 : args.auth,
                 });
             },
@@ -1783,8 +1783,8 @@ class Client {
                 return this.request({
                     path: api_endpoints_1.createPage.path(),
                     method: api_endpoints_1.createPage.method,
-                    query: (0, helpers_1.pick)(args, api_endpoints_1.createPage.queryParams),
-                    body: (0, helpers_1.pick)(args, api_endpoints_1.createPage.bodyParams),
+                    query: helpers_1.pick(args, api_endpoints_1.createPage.queryParams),
+                    body: helpers_1.pick(args, api_endpoints_1.createPage.bodyParams),
                     auth: args === null || args === void 0 ? void 0 : args.auth,
                 });
             },
@@ -1795,8 +1795,8 @@ class Client {
                 return this.request({
                     path: api_endpoints_1.getPage.path(args),
                     method: api_endpoints_1.getPage.method,
-                    query: (0, helpers_1.pick)(args, api_endpoints_1.getPage.queryParams),
-                    body: (0, helpers_1.pick)(args, api_endpoints_1.getPage.bodyParams),
+                    query: helpers_1.pick(args, api_endpoints_1.getPage.queryParams),
+                    body: helpers_1.pick(args, api_endpoints_1.getPage.bodyParams),
                     auth: args === null || args === void 0 ? void 0 : args.auth,
                 });
             },
@@ -1807,8 +1807,8 @@ class Client {
                 return this.request({
                     path: api_endpoints_1.updatePage.path(args),
                     method: api_endpoints_1.updatePage.method,
-                    query: (0, helpers_1.pick)(args, api_endpoints_1.updatePage.queryParams),
-                    body: (0, helpers_1.pick)(args, api_endpoints_1.updatePage.bodyParams),
+                    query: helpers_1.pick(args, api_endpoints_1.updatePage.queryParams),
+                    body: helpers_1.pick(args, api_endpoints_1.updatePage.bodyParams),
                     auth: args === null || args === void 0 ? void 0 : args.auth,
                 });
             },
@@ -1820,8 +1820,8 @@ class Client {
                     return this.request({
                         path: api_endpoints_1.getPageProperty.path(args),
                         method: api_endpoints_1.getPageProperty.method,
-                        query: (0, helpers_1.pick)(args, api_endpoints_1.getPageProperty.queryParams),
-                        body: (0, helpers_1.pick)(args, api_endpoints_1.getPageProperty.bodyParams),
+                        query: helpers_1.pick(args, api_endpoints_1.getPageProperty.queryParams),
+                        body: helpers_1.pick(args, api_endpoints_1.getPageProperty.bodyParams),
                         auth: args === null || args === void 0 ? void 0 : args.auth,
                     });
                 },
@@ -1835,8 +1835,8 @@ class Client {
                 return this.request({
                     path: api_endpoints_1.getUser.path(args),
                     method: api_endpoints_1.getUser.method,
-                    query: (0, helpers_1.pick)(args, api_endpoints_1.getUser.queryParams),
-                    body: (0, helpers_1.pick)(args, api_endpoints_1.getUser.bodyParams),
+                    query: helpers_1.pick(args, api_endpoints_1.getUser.queryParams),
+                    body: helpers_1.pick(args, api_endpoints_1.getUser.bodyParams),
                     auth: args === null || args === void 0 ? void 0 : args.auth,
                 });
             },
@@ -1847,8 +1847,8 @@ class Client {
                 return this.request({
                     path: api_endpoints_1.listUsers.path(),
                     method: api_endpoints_1.listUsers.method,
-                    query: (0, helpers_1.pick)(args, api_endpoints_1.listUsers.queryParams),
-                    body: (0, helpers_1.pick)(args, api_endpoints_1.listUsers.bodyParams),
+                    query: helpers_1.pick(args, api_endpoints_1.listUsers.queryParams),
+                    body: helpers_1.pick(args, api_endpoints_1.listUsers.bodyParams),
                     auth: args === null || args === void 0 ? void 0 : args.auth,
                 });
             },
@@ -1859,15 +1859,15 @@ class Client {
                 return this.request({
                     path: api_endpoints_1.getSelf.path(),
                     method: api_endpoints_1.getSelf.method,
-                    query: (0, helpers_1.pick)(args, api_endpoints_1.getSelf.queryParams),
-                    body: (0, helpers_1.pick)(args, api_endpoints_1.getSelf.bodyParams),
+                    query: helpers_1.pick(args, api_endpoints_1.getSelf.queryParams),
+                    body: helpers_1.pick(args, api_endpoints_1.getSelf.bodyParams),
                     auth: args === null || args === void 0 ? void 0 : args.auth,
                 });
             },
         };
         __classPrivateFieldSet(this, _Client_auth, options === null || options === void 0 ? void 0 : options.auth, "f");
         __classPrivateFieldSet(this, _Client_logLevel, (_a = options === null || options === void 0 ? void 0 : options.logLevel) !== null && _a !== void 0 ? _a : logging_1.LogLevel.WARN, "f");
-        __classPrivateFieldSet(this, _Client_logger, (_b = options === null || options === void 0 ? void 0 : options.logger) !== null && _b !== void 0 ? _b : (0, logging_1.makeConsoleLogger)(package_json_1.name), "f");
+        __classPrivateFieldSet(this, _Client_logger, (_b = options === null || options === void 0 ? void 0 : options.logger) !== null && _b !== void 0 ? _b : logging_1.makeConsoleLogger(package_json_1.name), "f");
         __classPrivateFieldSet(this, _Client_prefixUrl, ((_c = options === null || options === void 0 ? void 0 : options.baseUrl) !== null && _c !== void 0 ? _c : "https://api.notion.com") + "/v1/", "f");
         __classPrivateFieldSet(this, _Client_timeoutMs, (_d = options === null || options === void 0 ? void 0 : options.timeoutMs) !== null && _d !== void 0 ? _d : 60000, "f");
         __classPrivateFieldSet(this, _Client_notionVersion, (_e = options === null || options === void 0 ? void 0 : options.notionVersion) !== null && _e !== void 0 ? _e : Client.defaultNotionVersion, "f");
@@ -1915,14 +1915,14 @@ class Client {
             }), __classPrivateFieldGet(this, _Client_timeoutMs, "f"));
             const responseText = await response.text();
             if (!response.ok) {
-                throw (0, errors_1.buildRequestError)(response, responseText);
+                throw errors_1.buildRequestError(response, responseText);
             }
             const responseJson = JSON.parse(responseText);
             this.log(logging_1.LogLevel.INFO, `request success`, { method, path });
             return responseJson;
         }
         catch (error) {
-            if (!(0, errors_1.isNotionClientError)(error)) {
+            if (!errors_1.isNotionClientError(error)) {
                 throw error;
             }
             // Log the error if it's one of our known error types
@@ -1930,7 +1930,7 @@ class Client {
                 code: error.code,
                 message: error.message,
             });
-            if ((0, errors_1.isHTTPResponseError)(error)) {
+            if (errors_1.isHTTPResponseError(error)) {
                 // The response body may contain sensitive information so it is logged separately at the DEBUG level
                 this.log(logging_1.LogLevel.DEBUG, `failed response body`, {
                     body: error.body,
@@ -1946,8 +1946,8 @@ class Client {
         return this.request({
             path: api_endpoints_1.search.path(),
             method: api_endpoints_1.search.method,
-            query: (0, helpers_1.pick)(args, api_endpoints_1.search.queryParams),
-            body: (0, helpers_1.pick)(args, api_endpoints_1.search.bodyParams),
+            query: helpers_1.pick(args, api_endpoints_1.search.queryParams),
+            body: helpers_1.pick(args, api_endpoints_1.search.bodyParams),
             auth: args === null || args === void 0 ? void 0 : args.auth,
         });
     }
@@ -1958,7 +1958,7 @@ class Client {
      * @param args Arguments to send to the console
      */
     log(level, message, extraInfo) {
-        if ((0, logging_1.logLevelSeverity)(level) >= (0, logging_1.logLevelSeverity)(__classPrivateFieldGet(this, _Client_logLevel, "f"))) {
+        if (logging_1.logLevelSeverity(level) >= logging_1.logLevelSeverity(__classPrivateFieldGet(this, _Client_logLevel, "f"))) {
             __classPrivateFieldGet(this, _Client_logger, "f").call(this, level, message, extraInfo);
         }
     }
@@ -2199,7 +2199,7 @@ class NotionClientErrorBase extends Error {
  * @returns `true` if error is a `NotionClientError`.
  */
 function isNotionClientError(error) {
-    return (0, helpers_1.isObject)(error) && error instanceof NotionClientErrorBase;
+    return helpers_1.isObject(error) && error instanceof NotionClientErrorBase;
 }
 exports.isNotionClientError = isNotionClientError;
 /**
@@ -2348,7 +2348,7 @@ function parseAPIErrorResponseBody(body) {
     catch (parseError) {
         return;
     }
-    if (!(0, helpers_1.isObject)(parsed) ||
+    if (!helpers_1.isObject(parsed) ||
         typeof parsed["message"] !== "string" ||
         !isAPIErrorCode(parsed["code"])) {
         return;
@@ -2455,7 +2455,7 @@ function logLevelSeverity(level) {
         case LogLevel.ERROR:
             return 80;
         default:
-            return (0, helpers_1.assertNever)(level);
+            return helpers_1.assertNever(level);
     }
 }
 exports.logLevelSeverity = logLevelSeverity;
@@ -9396,7 +9396,7 @@ module.exports = require("zlib");
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@notionhq/client","version":"1.0.2","description":"A simple and easy to use client for the Notion API","engines":{"node":">=12"},"homepage":"https://developers.notion.com/docs/getting-started","bugs":{"url":"https://github.com/makenotion/notion-sdk-js/issues"},"repository":{"type":"git","url":"https://github.com/makenotion/notion-sdk-js/"},"keywords":["notion","notionapi","rest","notion-api"],"main":"./build/src","types":"./build/src/index.d.ts","scripts":{"prepare":"npm run build","prepublishOnly":"npm run checkLoggedIn && npm run lint && npm run test","build":"tsc","prettier":"prettier --write .","lint":"prettier --check . && eslint . --ext .ts && cspell \'**/*\' ","test":"ava","check-links":"git ls-files | grep md$ | xargs -n 1 markdown-link-check","prebuild":"npm run clean","clean":"rm -rf ./build","checkLoggedIn":"./scripts/verifyLoggedIn.sh"},"author":"","license":"MIT","files":["build/package.json","build/src/**"],"dependencies":{"@types/node-fetch":"^2.5.10","node-fetch":"^2.6.1"},"devDependencies":{"@ava/typescript":"^2.0.0","@typescript-eslint/eslint-plugin":"^4.22.0","@typescript-eslint/parser":"^4.22.0","ava":"^3.15.0","cspell":"^5.4.1","eslint":"^7.24.0","markdown-link-check":"^3.8.7","prettier":"^2.3.0","typescript":"^4.2.4"}}');
+module.exports = JSON.parse('{"name":"@notionhq/client","version":"1.0.3","description":"A simple and easy to use client for the Notion API","engines":{"node":">=12"},"homepage":"https://developers.notion.com/docs/getting-started","bugs":{"url":"https://github.com/makenotion/notion-sdk-js/issues"},"repository":{"type":"git","url":"https://github.com/makenotion/notion-sdk-js/"},"keywords":["notion","notionapi","rest","notion-api"],"main":"./build/src","types":"./build/src/index.d.ts","scripts":{"prepare":"npm run build","prepublishOnly":"npm run checkLoggedIn && npm run lint && npm run test","build":"tsc","prettier":"prettier --write .","lint":"prettier --check . && eslint . --ext .ts && cspell \'**/*\' ","test":"ava","check-links":"git ls-files | grep md$ | xargs -n 1 markdown-link-check","prebuild":"npm run clean","clean":"rm -rf ./build","checkLoggedIn":"./scripts/verifyLoggedIn.sh"},"author":"","license":"MIT","files":["build/package.json","build/src/**"],"dependencies":{"@types/node-fetch":"^2.5.10","node-fetch":"^2.6.1"},"devDependencies":{"@ava/typescript":"^2.0.0","@typescript-eslint/eslint-plugin":"^4.22.0","@typescript-eslint/parser":"^4.22.0","ava":"^3.15.0","cspell":"^5.4.1","eslint":"^7.24.0","markdown-link-check":"^3.8.7","prettier":"^2.3.0","typescript":"^4.2.4"}}');
 
 /***/ }),
 
